@@ -1,5 +1,4 @@
 const path = require("path");
-const fs = require("fs");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -28,7 +27,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(), // Replaces 'make clean'
+    new CleanWebpackPlugin(), // Cleans 'lib/' before each build
   ],
   resolve: {
     extensions: [".js"],
