@@ -31,3 +31,9 @@ pkg/marks.js: src/marks.js
 	# @$(BROWSERIFY) --list $< | sed 's#^#$@: #' >.deps/marks.d
 
 -include .deps/*.d
+
+
+    // "build":"make clean default",
+    // "prepublish": "make clean default",
+    // "test": "./node_modules/karma/bin/karma start --single-run",
+    // "watch": "mkdir -p pkg && watchify -t babelify -s marks src/marks.js -o pkg/marks.js"
