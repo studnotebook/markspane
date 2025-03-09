@@ -1,6 +1,6 @@
 {
   "name": "marks-pane",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "A library for drawing marks on a pane",
   "homepage": "https://github.com/fchasen/marks",
   "bugs": {
@@ -22,7 +22,7 @@
     "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "compile": "webpack --mode=production",
+    "prepare": "webpack --mode=production",
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
     "clean": "rm -rf lib/ pkg/"
