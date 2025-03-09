@@ -25,6 +25,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
-    "clean": "rm -rf lib/ pkg/"
+    "clean": "rm -rf lib/ pkg/",
+    "postinstall": "npm run build"
   }
 }

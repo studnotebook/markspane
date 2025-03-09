@@ -10,7 +10,7 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "lib"),
-    library: "marks",
+    library: "marks-pane",
     libraryTarget: "umd",
   },
   module: {
