@@ -26,9 +26,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CleanWebpackPlugin(), // Cleans 'lib/' before each build
-  ],
   resolve: {
     extensions: [".js"],
   },
