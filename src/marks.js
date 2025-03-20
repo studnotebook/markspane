@@ -147,6 +147,7 @@ export class Highlight extends Mark {
             var r = filtered[i];
             var el = svg.createElement('rect');
             el.setAttribute('x', r.left - offset.left + container.left);
+            el.setAttribute('tabindex', 0);
             el.setAttribute('y', r.top - offset.top + container.top);
             el.setAttribute('height', r.height);
             el.setAttribute('width', r.width);
@@ -217,8 +218,8 @@ export class Highlight extends Mark {
     </g>
   </g>
             `;
+            if(i==0) docFrag.appendChild(innerSvg);
             docFrag.appendChild(el);
-            docFrag.appendChild(innerSvg);
         }
 
         this.element.appendChild(docFrag);
